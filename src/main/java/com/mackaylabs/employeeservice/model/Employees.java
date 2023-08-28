@@ -1,10 +1,14 @@
 package com.mackaylabs.employeeservice.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Employees {
-    private List<Employee> employees = new ArrayList<>();
+    private List<Employee> employees;
+
+    public Employees(){}
+    public Employees(List<Employee> employees) {
+        this.employees = employees;
+    }
 
     public List<Employee> getEmployees() {
         return employees;
